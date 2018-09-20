@@ -2,7 +2,7 @@ var $win = $(window);
 var $articleTitle = $('.article .at-theme');
 
 /**
- * Fonction titre
+ * Function Title
  */
 function restrictArticleTitle() {
 	var titleWidth = parseInt($articleTitle.css('width'));
@@ -14,16 +14,17 @@ function restrictArticleTitle() {
 }
 
 /**
- *  breadcrumbs
+ * Bread
  */
 function initBreadcrumbs() {
+	//Checks if breadcrumbs are long,a class is added and they become scrollable
 	if ( $('.bread, .lp-sousnav').length ) {
     	$('.bread, .lp-sousnav').each(function() {
     		if ( $(this).find('.ql-list').outerWidth() > 355 ) {
     			$(this).parent().addClass('bread--long')
     		}
 
-    		//Exposez page - exposnt
+    		//Exposez page - moves the last link at the top of the breadcrumbs
     		if ( $(this).hasClass('lp-sousnav') ) {
     			var $parent = $(this);
     			var $lastItem  = $parent.find('.ql-item:last-child');
@@ -84,7 +85,7 @@ $win.on('load scroll', function() {
 	animateCouter();
 
 	/*
-	 * Add language 
+	 *Language list options
 	 */
 	$('.ls-lang-list').append('<li class="ls-lang-item ls-lang-de"><a href="#" class="ls-lang-link"><i></i></a></li><li class="ls-lang-item ls-lang-es"><a href="#" class="ls-lang-link"><i></i></a></li><li class="ls-lang-item ls-lang-it"><a href="#" class="ls-lang-link"><i></i></a></li>');
 
@@ -92,7 +93,7 @@ $win.on('load scroll', function() {
 	var $clone = $('.article .social-sharing').clone().addClass('social-sharing--gray');
 	$clone.insertAfter('.article-wrapper .article-title');
 
-	// SLiders 
+	// SLiders initialization
 	if ($('.actualites .grid-la-list').length) {
 		$('.actualites .grid-la-list').carouFredSel({
 			width: '100%',
@@ -114,7 +115,7 @@ $win.on('load scroll', function() {
 		});
 	}
 
-	// SLiders 
+	// SLiders initialization
 	if ($('.exposez .list-articles .grid-la-list').length || $('.visitez .list-articles .grid-la-list').length || $('.lp-univers .list-articles .grid-la-list').length) {
 		$('.exposez .list-articles .grid-la-list').add('.visitez .list-articles .grid-la-list').add('.lp-univers .list-articles .grid-la-list').carouFredSel({
 			width: '100%',
@@ -170,7 +171,10 @@ $win.on('load scroll', function() {
 				start: -1
 			},
 			auto: true,
-			// responsive: true,
+			swipe: {
+				onTouch: true,
+				onMouse: true
+			},
 			scroll: { 
 				items:1,
 				duration: 1000,
@@ -239,11 +243,11 @@ $('.article-wrapper .article-content h4').each(function() {
 	}, 100);
 })
 
-//Adds padding-top to global wrapper 
+//Padding-top to global wrapper pour compensation du footer fixed
 $('.global-wrapper').css('paddingTop', $('.site-banner').outerHeight());
 
 /*
- * Google map
+ * Google maps
  */
 window.initMap = function() {
 	var $map = $('.map');
