@@ -95,8 +95,8 @@ word-wrap: normal;
 .visitez:after,
 .lp-univers:after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 378px; background: url(../all4pack_git_mobile/images/intro.png) no-repeat 0 0; background-size: cover; pointer-events: none; z-index: -1; }
 
-.body-mobile.article .site-banner .global-search-form { top: auto; bottom: 100%; }
-.body-mobile.article #cxpmClientAccountWidget { top: 12px; }
+/*.body-mobile.article .site-banner .global-search-form { top: auto; bottom: 100%; }
+.body-mobile.article #cxpmClientAccountWidget { top: 12px; }*/
 
 
 /* ------------------------------------------------------------ *\
