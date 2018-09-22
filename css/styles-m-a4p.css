@@ -558,7 +558,7 @@ word-wrap: normal;
 	Global Wrapper
 \* ------------------------------------------------------------ */
 
-.global-wrapper.menu-active .main-navigation { opacity: 1; visibility: visible; position: relative;  top: 0;  z-index: 5; }
+.global-wrapper.menu-active .main-navigation { opacity: 1; visibility: visible; position: relative;  top: 0;  z-index: 5; max-width: 780px; }
 
 .global-wrapper.menu-active .site-banner { overflow-y: auto; overflow-x: hidden; bottom: 0; }
 
