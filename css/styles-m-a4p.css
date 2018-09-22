@@ -79,6 +79,8 @@ word-wrap: normal;
         hyphens: none;
 }
 
+.site-banner .inside, .header-navigation .inside, .site-footer .inside, .wrapper, .site-wrapper {max-width: 780px; }
+
 /* ------------------------------------------------------------ *\
     Body Mobile Article
 \* ------------------------------------------------------------ */
@@ -566,8 +568,6 @@ word-wrap: normal;
 
 .global-wrapper.menu-active .is-fixed .main-navigation { top: -46px; }
 
-.global-wrapper.menu-active .tag-primary { top: -13px; }
-
 
 
 /* ------------------------------------------------------------ *\
@@ -576,7 +576,7 @@ word-wrap: normal;
 
 .main-navigation { display: block; padding: 0; box-shadow: none; position: relative; top: 0; background: transparent; transition: top .3s, visibility .3s, opacity .3s; }
 
-.main-navigation .mn-menu-line { display: block; border: 0; text-align: center; padding-bottom: 58px; }
+.main-navigation .mn-menu-line { display: block; border: 0; text-align: center; padding-bottom: 35px; }
 
 .main-navigation .mn-item-lvl-1 { background: #fff !important; text-align: center; min-height: 0; padding-bottom: 8px; padding-top: 8px; border-bottom: 0; transition: background .3s; }
 .main-navigation .mn-item-lvl-1 .mn-link-text { margin: 0; }
@@ -1419,6 +1419,16 @@ search results
 .tt-suggestion a:focus, .tt-suggestion a:hover { background-color: #fff7d5; color: #1c294b; padding-left: 15px; }
 .tt-suggestion a:hover strong.tt-highlight {color: #1c294b;}*/
 
+
+
+/*Mega menu sectors*/
+.header__actions h2 { text-align: center; border: 0; padding-top: 15px; margin-bottom: 10px; font-size: 15px; letter-spacing: 1px; }
+.list-tags { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin: 0 15px 20px; text-transform: uppercase; text-align: center; flex-wrap: wrap; 
+    list-style-type: none; padding: 0; }
+.list-tags li { padding: 7px 17px 5px; -ms-transform: skew(-26deg); transform: skew(-26deg); font-family: 'Neo Sans Pro', sans-serif !important; font-size: 13px; font-weight: 700; letter-spacing: 0.03em; color: #1c294b; background: #fcd139; margin-bottom: 12px; }
+.list-tags li + li { margin-left: 12px; }
+.list-tags a { display: block; -ms-transform: skew(26deg); transform: skew(26deg); font-family: 'Neo Sans Pro', sans-serif !important; text-decoration: none; line-height: 1.4; }
+.list-tags a:hover { box-shadow: inset 0 0 15px rgba(255, 210, 49, 0.33), 0 0 15px rgba(255, 210, 49, 0.83);}
 
 
 /* Ad */
