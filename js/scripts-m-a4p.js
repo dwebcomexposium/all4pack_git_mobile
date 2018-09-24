@@ -2,7 +2,7 @@ var $win = $(window);
 var $articleTitle = $('.article .at-theme');
 
 /**
- * Function Title
+ * Function to restric the Title in the Article page so the lines can be added on both sides
  */
 function restrictArticleTitle() {
 	var titleWidth = parseInt($articleTitle.css('width'));
@@ -14,7 +14,7 @@ function restrictArticleTitle() {
 }
 
 /**
- * Bread
+ * Initializes breadcrumbs
  */
 function initBreadcrumbs() {
 	//Checks if breadcrumbs are long,a class is added and they become scrollable
@@ -85,13 +85,25 @@ $win.on('load scroll', function() {
 	animateCouter();
 
 	/*
-	 *Language list options
+	 * Add language list options
 	 */
-	$('.ls-lang-list').append('<li class="ls-lang-item ls-lang-de"><a href="#" class="ls-lang-link"><i></i></a></li><li class="ls-lang-item ls-lang-es"><a href="#" class="ls-lang-link"><i></i></a></li><li class="ls-lang-item ls-lang-it"><a href="#" class="ls-lang-link"><i></i></a></li>');
+	$('.ls-lang-list').append('<li class="ls-lang-item ls-lang-de"><a href="https://www.all4pack.com/de/Verpackung-und-Handling" class="ls-lang-link"></a></li><li class="ls-lang-item ls-lang-es"><a href="https://www.all4pack.com/es/emballage-y-manipulacion" class="ls-lang-link"></a></li><li class="ls-lang-item ls-lang-it"><a href="https://www.all4pack.com/it/imballaggio-e-movimentazione" class="ls-lang-link"></a></li>');
+	
 
 	//Clone social icons
 	var $clone = $('.article .social-sharing').clone().addClass('social-sharing--gray');
 	$clone.insertAfter('.article-wrapper .article-title');
+	
+	
+	/*
+	 * Link news
+	 */
+	if ($('html').attr('lang') == 'fr') {
+		$(".front .actualites a.link-view-all").attr("href", "https://fr.all4pack.mobi/Decouvrez-ALL4PACK/actualites-du-salon");
+	
+	} else {
+		$(".front .actualites a.link-view-all").attr("href", "https://en.all4pack.mobi//Discover-ALL4PACK/Exhibition-news");
+	}
 
 	// SLiders initialization
 	if ($('.actualites .grid-la-list').length) {
@@ -243,11 +255,11 @@ $('.article-wrapper .article-content h4').each(function() {
 	}, 100);
 })
 
-//Padding-top to global wrapper pour compensation du footer fixed
+//Adds padding-top to global wrapper to compensate for the fixed footer
 $('.global-wrapper').css('paddingTop', $('.site-banner').outerHeight());
 
 /*
- * Google maps
+ * Expose global function for google maps
  */
 window.initMap = function() {
 	var $map = $('.map');
