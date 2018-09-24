@@ -494,6 +494,7 @@ word-wrap: normal;
 .site-banner.is-fixed #cxpmClientAccountWidget { top: 12px; }
 .site-banner.is-fixed .button-burger { top: 16px; }
 .site-banner.is-fixed .main-navigation { top: 46px; }
+.site-banner.is-fixed .global-search-form { z-index: 0; }
 
 .site-banner .meta {  background: #6ec3bf; width: 100%; margin: auto; display: flex; align-items: center; justify-content: center; padding: 8px 56px; letter-spacing: 0.07em; color: #fff; text-transform: uppercase; }
 .site-banner .meta i { margin-right: 15px; vertical-align: top; }
