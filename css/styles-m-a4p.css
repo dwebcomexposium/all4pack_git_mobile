@@ -905,17 +905,17 @@ word-wrap: normal;
 .article-wrapper .article-navigation .an-item .icon:before { display: none; }
 
 .article-wrapper .article-navigation .an-item-previous { margin-left: -16px; }
-.article-wrapper .article-navigation .an-item-previous:before { left: 99.9%; border-style: solid; border-width: 172px 76px 0 0; border-color: #8acdc9 transparent transparent transparent; }
+.article-wrapper .article-navigation .an-item-previous:before { left: 99.9%; border-style: solid; border-width: 152px 76px 0 0; border-color: #8acdc9 transparent transparent transparent; }
 .article-wrapper .article-navigation .an-item-previous .icon { transform: translateY(-50%) scaleX(-1); left: 19px; }
-.article-wrapper .article-navigation .an-item-previous .an-item-content { padding-left: 78px; padding-right: 20px; background: #8acdc9; min-height: 172px; }
+.article-wrapper .article-navigation .an-item-previous .an-item-content { padding-left: 78px; padding-right: 20px; background: #8acdc9; min-height: 152px; }
 
 .article-wrapper .article-navigation .an-item-next { margin-right: -16px; margin-left: auto; margin-top: -35px; }
-.article-wrapper .article-navigation .an-item-next:before { right: 99.9%; border-style: solid; border-width: 0px 0 187px 76px; border-color: transparent transparent #6dc1bc transparent; } 
+.article-wrapper .article-navigation .an-item-next:before { right: 99.9%; border-style: solid; border-width: 0px 0 147px 76px; border-color: transparent transparent #6dc1bc transparent; } 
 .article-wrapper .article-navigation .an-item-next .icon { right: 14px; }
-.article-wrapper .article-navigation .an-item-next .an-item-content { padding-left: 20px; padding-right: 68px; text-align: right; min-height: 187px; }
+.article-wrapper .article-navigation .an-item-next .an-item-content { padding-left: 20px; padding-right: 68px; text-align: right; min-height: 147px; }
 
-.article-wrapper .article-navigation .an-item-content { background: #6dc1bc;  font-size: 20px; line-height: 1.15; text-transform: uppercase; font-weight: 500; font-family: Barlow, sans-serif; letter-spacing: 0.07em; width: 100%; padding: 33px 0; }
-.article-wrapper .article-navigation .an-item-title { font-weight: 500; }
+.article-wrapper .article-navigation .an-item-content { background: #6dc1bc;  font-size: 17px; line-height: 1.15; text-transform: uppercase; font-weight: 500; font-family: Barlow, sans-serif; letter-spacing: 0.07em; width: 100%; padding: 13px 0; }
+.article-wrapper .article-navigation .an-item-title { font-weight: 500; overflow: hidden; max-height: 110px; text-overflow: ellipsis; }
 .article-wrapper .article-navigation a { color: #fff; }
 
 .article-wrapper .article-navigation .an-item .an-item-illust { display: none; }
