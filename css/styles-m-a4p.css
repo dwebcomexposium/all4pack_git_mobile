@@ -1341,7 +1341,8 @@ span.mysel-modal-title-txt {text-transform: uppercase; font-size: 15px; letter-s
 .mod-catal .evl-event .evl-event-media img {margin-right:.7rem;min-height:5.5rem;width:5.5rem}
 
 
-.page-events .catal-ex-item-stand-item {background-color: #1c294b; margin: 10px 0; padding: 7px 14px; }
+.page-events .catal-ex-item-stand-item {background-color: #1c294b; margin: 10px 0; padding: 7px 14px; color:#fff!important; }
+
 .page-events .catal-ex-item-stand-item p.date_event {font-style: normal!important; font-size: 14px; font-weight: 300; line-height: 1; color: #fff;  }
 .catal-nav-ex, .mod-catal.catal-nav-affix {display: none; }
 .page-events .slider { padding: 0; }
@@ -1376,7 +1377,7 @@ span.mysel-modal-title-txt {text-transform: uppercase; font-size: 15px; letter-s
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
 }
-
+.page-events .mod-catal i.icon-catal-localisation:before {color: #fff!important;}
 
 
 
