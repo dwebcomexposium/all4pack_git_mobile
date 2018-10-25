@@ -623,7 +623,7 @@ word-wrap: normal;
 	Account Widget
 \* ------------------------------------------------------------ */
 
-#cxpmClientAccountWidget { position: absolute; top: 50px; right: 15px; padding-top: 0; z-index: 6; transition: top .3s; }
+#cxpmClientAccountWidget { position: absolute!important; top: 50px; right: 15px; padding-top: 0; z-index: 6; transition: top .3s; }
 
 #cxpmClientAccountWidget .widget-my-selection { position: relative; top: -2px; }
 #cxpmClientAccountWidget .widget-my-selection .number { position: relative; display: block !important; width: 14px !important; height: 14px !important; top: 0; left: 20px; padding-top: 2px; border-radius: 50%; font-size: 10px !important; line-height: 1; font-weight: 500; color: #fff; text-align: center; background: #1c294b !important; }
