@@ -137,7 +137,7 @@ word-wrap: normal;
 .article_list .la-item .gla-btn-read-more { bottom: 0; }
 
 
-.article_list .la-item .la-item-author, .article_list .la-item .la-item-desc { display: none; }
+.article_list .la-item .la-item-author, .article_list .la-item .la-item-desc, .article_list .la-item-btn { display: none; }
 
 
 /* ------------------------------------------------------------ *\
@@ -1521,4 +1521,27 @@ h3.pl-item-title, .search-result h3 {font-weight: 500; font-size: 22px; color: #
 		-webkit-transform: translatey(10px);
 		        transform: translatey(10px);
 	}
+}
+
+ .catalogue #zone1 .quicklinks li {
+
+	text-align: center;
+}
+ .catalogue #zone1 .quicklinks .btn-primary {
+    display: inline-block;
+    padding: 12px 20px 14px;
+    border: 1px solid #feeeae;
+    border-radius: 50px;
+    vertical-align: middle;
+    box-shadow: inset 0 0 7px rgba(255,210,49,.33), 0 0 7px rgba(255,210,49,.63);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .04em;
+    font-style: italic;
+    color: #1c294b;
+    text-decoration: none;
+    text-transform: none;
+    background: #fcd139;
+    transition: box-shadow .3s;
+	margin-top: 15px;
 }
