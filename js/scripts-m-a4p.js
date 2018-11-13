@@ -20,7 +20,8 @@ function initBreadcrumbs() {
 	//Checks if breadcrumbs are long,a class is added and they become scrollable
 	if ( $('.bread, .lp-sousnav').length ) {
     	$('.bread, .lp-sousnav').each(function() {
-    		if ( $(this).find('.ql-list').outerWidth() > 355 ) {
+    		if ( $(this).
+    		find('.ql-list').outerWidth() > 355 ) {
     			$(this).parent().addClass('bread--long')
     		}
 
@@ -128,8 +129,8 @@ $win.on('load scroll', function() {
 	}
 
 	// SLiders initialization
-	if ($('.exposez .list-articles .grid-la-list').length || $('.visitez .list-articles .grid-la-list').length || $('.lp-univers .list-articles .grid-la-list').length) {
-		$('.exposez .list-articles .grid-la-list').add('.visitez .list-articles .grid-la-list').add('.lp-univers .list-articles .grid-la-list').carouFredSel({
+	if ($('.content396097 .list-articles .grid-la-list').length || $('.content397298 .list-articles .grid-la-list').length || $('.lp-univers .list-articles .grid-la-list').length) {
+		$('.content396097 .list-articles .grid-la-list').add('.content397298 .list-articles .grid-la-list').add('.lp-univers .list-articles .grid-la-list').carouFredSel({
 			width: '100%',
 			height: 'auto',
 			items: 1,
